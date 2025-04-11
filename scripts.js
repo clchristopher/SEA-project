@@ -47,9 +47,9 @@ let gameDirectory = [
     id: 2,
     title: "Tapple",
     imageURL: "https://cf.geekdo-images.com/ug2wHUhS3E-LA_lmLQYyNQ__imagepage/img/EOvL07ZTPgjIzy0O6-sOTHPe_sk=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6650117.jpg",
-    releaseYear: 1995,
+    releaseYear: 2012,
     players: "3-4",
-    playTime: "60-120 minutes",
+    playTime: "30 minutes",
     description: "Players shout answers to trivia categories and eliminate letters as they go. The game is fast-paced and requires quick thinking and a good vocabulary."
   },
   {
@@ -60,6 +60,73 @@ let gameDirectory = [
     players: "2-8",
     playTime: "15 minutes",
     description: "Give your team clever one-word clues to help them spot their agents in the field. But be careful! The other team is trying to do the same thing, and you don't want to help them out."
+  },
+  {
+    id: 4,
+    title: "Monopoly",
+    imageURL: "https://cf.geekdo-images.com/9nGoBZ0MRbi6rdH47sj2Qg__imagepage/img/lxE4vGa3ef8a4brTRnvxGurt8I0=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5786795.jpg",
+    players: "2-8",
+    playTime: "60-180 minutes",
+    description: "In this competitive real estate market, there's only one possible outcome: Monopoly!"
+  },
+  {
+    id: 5,
+    title: "Monopoly Deal",
+    imageURL: "https://cf.geekdo-images.com/XACkCb3JL0uvF6xOn0lRSg__itemrep/img/brjpaf4elZcwWCh5qm3CyX5ydPY=/fit-in/246x300/filters:strip_icc()/pic4595026.jpg",
+    players: "2-5",
+    playTime: "15 minutes",
+    description: "Can you collect three sets of properties before your fortune runs out?"
+  },
+  {
+    id: 1,
+    title: "Catan",
+    imageURL: "https://cf.geekdo-images.com/W3Bsga_uLP9kO91gZ7H8yw__imagepage/img/M_3Vg1j2HlNgkv7PL2xl2BJE2bw=/fit-in/900x600/filters:no_upscale():strip_icc()/pic2419375.jpg",
+    releaseYear: 1995,
+    players: "3-4",
+    playTime: "60-120 minutes",
+    description: "In this game, players try to establish settlements on the island of Catan by building roads, cities, and settlements. Players collect and trade resources to build and expand their civilization."
+  },
+  {
+    id: 2,
+    title: "Tapple",
+    imageURL: "https://cf.geekdo-images.com/ug2wHUhS3E-LA_lmLQYyNQ__imagepage/img/EOvL07ZTPgjIzy0O6-sOTHPe_sk=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6650117.jpg",
+    releaseYear: 2012,
+    players: "3-4",
+    playTime: "30 minutes",
+    description: "Players shout answers to trivia categories and eliminate letters as they go. The game is fast-paced and requires quick thinking and a good vocabulary."
+  },
+  {
+    id: 3,
+    title: "Codenames",
+    imageURL: "https://cf.geekdo-images.com/F_KDEu0GjdClml8N7c8Imw__imagepage/img/rc_Do8f5v41nWEGcwHE1eKAkIfI=/fit-in/900x600/filters:no_upscale():strip_icc()/pic2582929.jpg",
+    releaseYear: 2015,
+    players: "2-8",
+    playTime: "15 minutes",
+    description: "Give your team clever one-word clues to help them spot their agents in the field. But be careful! The other team is trying to do the same thing, and you don't want to help them out."
+  },
+  {
+    id: 4,
+    title: "Monopoly",
+    imageURL: "https://cf.geekdo-images.com/9nGoBZ0MRbi6rdH47sj2Qg__imagepage/img/lxE4vGa3ef8a4brTRnvxGurt8I0=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5786795.jpg",
+    players: "2-8",
+    playTime: "60-180 minutes",
+    description: "In this competitive real estate market, there's only one possible outcome: Monopoly!"
+  },
+  {
+    id: 5,
+    title: "Monopoly Deal",
+    imageURL: "https://cf.geekdo-images.com/XACkCb3JL0uvF6xOn0lRSg__itemrep/img/brjpaf4elZcwWCh5qm3CyX5ydPY=/fit-in/246x300/filters:strip_icc()/pic4595026.jpg",
+    players: "2-5",
+    playTime: "15 minutes",
+    description: "Can you collect three sets of properties before your fortune runs out?"
+  },
+  {
+    id: 4,
+    title: "Monopoly",
+    imageURL: "",
+    players: "2-8",
+    playTime: "15 minutes",
+    description: ""
   },
   
 ];
@@ -77,7 +144,7 @@ function showCards() {
 
   for (let i = 0; i < gameDirectory.length; i++) {
     let game = gameDirectory[i];
-    let bulletPoints = [game.releaseYear, game.players, game.playTime, game.description];
+    let bulletPoints = ["Released in " + game.releaseYear, game.players + " players", game.playTime, game.description];
     // This part of the code doesn't scale very well! After you add your
     // own data, you'll need to do something totally different here.
 
